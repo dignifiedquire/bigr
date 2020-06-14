@@ -1,7 +1,11 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+#![feature(const_loop)]
+#![feature(const_fn)]
+#![feature(const_if_match)]
+#![feature(const_generics)]
+#![feature(const_mut_refs)]
+#![allow(incomplete_features)]
+
+mod algorithms;
+mod uint;
+
+pub use self::uint::*;
